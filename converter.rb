@@ -1,8 +1,12 @@
 require './request.rb'
+require 'pry'
 
 class Converter
   def initialize
-    @json = Request.new.get_json
+    puts "On what date do you want to use the exchange rate in format XXXX-MM-DD"
+    date = gets.chomp
+    # date = '2020-12-12'
+    @json = Request.new.get_json(date)
     @all_rates = @json['rates']
   end
 

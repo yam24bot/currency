@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: dkdottk
+  password: "11111111"
+  pool: 5
+
+development:
+  <<: *default
+  database: exchanger_development
+
+production:
+  <<: *default
+  database: exchanger_production

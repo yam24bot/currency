@@ -4,6 +4,6 @@ Preusage app:
 ```bundle install```
 
 Start usage app:
-```ruby converter.rb```
+```ruby main.rb```
 
 You can use the API KEY for your needs
